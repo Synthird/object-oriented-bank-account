@@ -62,8 +62,8 @@ public class Transaction {
 	/**
 	 * Change the debit (How much money should be earned) for the transaction.
 	 * 
-	 * @param debit
-	 * @throws IllegalArgumentException
+	 * @param debit - The debit applied to the transaction.
+	 * @throws IllegalArgumentException - If the debit is a negative number.
 	 */
 	public void setDebit(double debit) throws IllegalArgumentException {
 		if (debit >= 0) {
@@ -85,8 +85,8 @@ public class Transaction {
 	/**
 	 * Change the credit (How much money should be spent) for the transaction.
 	 * 
-	 * @param credit
-	 * @throws IllegalArgumentException
+	 * @param credit - The credit applied to the transaction.
+	 * @throws IllegalArgumentException - If the crebit is a negative number.
 	 */
 	public void setCredit(double credit) throws IllegalArgumentException {
 		if (credit >= 0) {

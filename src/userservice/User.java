@@ -75,7 +75,7 @@ public final class User {
 	/**
 	 * Changes the name of the user.
 	 * 
-	 * @param name
+	 * @param name - The name of the user.
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -121,7 +121,7 @@ public final class User {
 	/**
 	 * Change the userId of the user.
 	 * 
-	 * @param userId
+	 * @param userId - The ID of the user.
 	 */
 	public void setUserId(int userId) {
 		this.userId = userId;
@@ -139,7 +139,7 @@ public final class User {
 	/**
 	 * Give the user a bank account.
 	 * 
-	 * @param bankAccount
+	 * @param bankAccount - The bank account to be added.
 	 */
 	public void addBankAccount(BankAccount bankAccount) {
 		bankAccounts.add(bankAccount);
@@ -152,7 +152,7 @@ public final class User {
 	/**
 	 * Add an email to the ArrayList of email addresses
 	 * 
-	 * @param email
+	 * @param email - The email to be added.
 	 */
 	public void addEmail(String email) {
 		emailAddresses.add(email);
@@ -161,7 +161,7 @@ public final class User {
 	/**
 	 * Remove an email address from the user.
 	 * 
-	 * @param email
+	 * @param email - The email to be removed.
 	 */
 	public void removeEmail(String email) {
 		removeFromStringArrayList(email, emailAddresses);
@@ -176,6 +176,9 @@ public final class User {
 		return emailAddresses;
 	}
 
+	/**Add a phone number to the user.
+	 * @param phoneNumber - The phone number to be added.
+	 */
 	public void addPhoneNumber(String phoneNumber) {
 		phoneNumbers.add(phoneNumber);
 	}
@@ -183,7 +186,7 @@ public final class User {
 	/**
 	 * Remove a phone number from the user.
 	 * 
-	 * @param phoneNumber
+	 * @param phoneNumber - The phone number to be removed.
 	 */
 	public void removePhoneNumber(String phoneNumber) {
 		removeFromStringArrayList(phoneNumber, phoneNumbers);
@@ -205,8 +208,8 @@ public final class User {
 
 	/**
 	 * @hidden
-	 * @param item
-	 * @param stringArrayList
+	 * @param item - The item to be removed.
+	 * @param stringArrayList - An ArrayList of strings.
 	 */
 	private void removeFromStringArrayList(String item, ArrayList<String> stringArrayList) {
 		if (stringArrayList.contains(item)) {

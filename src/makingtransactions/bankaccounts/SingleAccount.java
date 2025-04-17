@@ -56,7 +56,7 @@ public class SingleAccount extends BankAccount {
 	/**
 	 * Change the holder of the account.
 	 * 
-	 * @param userHolder
+	 * @param userHolder - The account holder.
 	 */
 	public void setUserHolder(User userHolder) {
 		this.userHolder = userHolder;

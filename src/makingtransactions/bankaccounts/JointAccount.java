@@ -21,8 +21,8 @@ public class JointAccount extends BankAccount {
 	 * @param accountName - The name of the account.
 	 * @param currency - The type of currency.
 	 * @param transitNumber - The transit number.
-	 * @param institutionNumber
-	 * @param accountNumber
+	 * @param institutionNumber - The institution number.
+	 * @param accountNumber - The account number.
 	 */
 	public JointAccount(User user, double balance, String accountName, String currency, int transitNumber,
 			int institutionNumber, int accountNumber) {
@@ -62,7 +62,7 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Connect a user to the joint account.
 	 * 
-	 * @param user
+	 * @param user - The user to be added to the joint account.
 	 */
 	public void addUser(User user) {
 		if (!containsUser(user)) {
@@ -74,7 +74,7 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Remove a user from the joint account.
 	 * 
-	 * @param user
+	 * @param user - The user to be removed from the joint account.
 	 */
 	public void removeUser(User user) {
 		if (users.size() > 1) {
@@ -92,7 +92,7 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Check to see if a user is connected to the joint account.
 	 * 
-	 * @param user
+	 * @param user - The user that is being checked.
 	 * @return <code>true</code> if the user is connected to the account. If not, it
 	 *         returns <code>false</code>.
 	 */

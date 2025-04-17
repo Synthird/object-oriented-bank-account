@@ -128,8 +128,8 @@ public abstract class BankAccount {
 	/**
 	 * Add a transaction to the bank account.
 	 * 
-	 * @param transaction
-	 * @throws NegativeBalanceException
+	 * @param transaction - The transaction to be added.
+	 * @throws NegativeBalanceException - If the credit on the transaction is bigger than the account balance.
 	 */
 	public void addTransaction(Transaction transaction) throws NegativeBalanceException {
 		double credit = transaction.getCredit();
@@ -155,7 +155,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the transit number on the bank account.
 	 * 
-	 * @param transitNumber
+	 * @param transitNumber - The transit number on the account.
 	 */
 	public void setTransitNumber(int transitNumber) {
 		this.transitNumber = transitNumber;
@@ -173,7 +173,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the institution number on the bank account.
 	 * 
-	 * @param institutionNumber
+	 * @param institutionNumber - The institution number on the account.
 	 */
 	public void setInstitutionNumber(int institutionNumber) {
 		this.institutionNumber = institutionNumber;
@@ -191,7 +191,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the account number for the bank account.
 	 * 
-	 * @param accountNumber
+	 * @param accountNumber - The account number.
 	 */
 	public void setAccountNumber(int accountNumber) {
 		this.accountNumber = accountNumber;
