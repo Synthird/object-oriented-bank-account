@@ -100,7 +100,7 @@ public final class User {
 	 */
 	public void setAge(int age) throws IllegalArgumentException {
 		if (age <= 0) {
-			throw new IllegalArgumentException("A person's age cannot be 0 or below!");
+			throw new IllegalArgumentException("The age of a user cannot be 0 or below!");
 		} else {
 			this.age = age;
 		}
@@ -132,7 +132,7 @@ public final class User {
 	}
 
 	/**
-	 * Get the user's <code>ArrayList</code> of bank accounts.
+	 * Get the <code>ArrayList</code> of bank accounts from a user.
 	 * 
 	 * @return An <code>ArrayList</code> of BankAccount classes.
 	 */
