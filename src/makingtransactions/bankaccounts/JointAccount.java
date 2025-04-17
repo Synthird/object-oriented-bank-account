@@ -47,10 +47,10 @@ public class JointAccount extends BankAccount {
 	}
 
 	/**
-	 * Get an ArrayList of users connected to the joint account.
+	 * Get an <code>ArrayList</code> of users connected to the joint account.
 	 * 
-	 * @return An ArrayList of users connected to the joint account. This is
-	 *         <strong>not</strong> the <code>users</code> field of the JointAccount
+	 * @return An <code>ArrayList</code> of users connected to the joint account. This is
+	 *         not the <code>users</code> field of the JointAccount
 	 *         instance/object.
 	 */
 	public ArrayList<User> getUsers() {

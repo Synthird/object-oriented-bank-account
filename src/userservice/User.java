@@ -132,9 +132,9 @@ public final class User {
 	}
 
 	/**
-	 * Get the user's ArrayList of bank accounts.
+	 * Get the user's <code>ArrayList</code> of bank accounts.
 	 * 
-	 * @return An ArrayList of BankAccount classes.
+	 * @return An <code>ArrayList</code> of BankAccount classes.
 	 */
 	public ArrayList<BankAccount> getBankAccounts() {
 		return bankAccounts;
@@ -167,7 +167,7 @@ public final class User {
 	}
 
 	/**
-	 * Add an email to the ArrayList of email addresses
+	 * Add an email to the <code>ArrayList</code> of email addresses
 	 * 
 	 * @param email The email to be added.
 	 */
@@ -187,7 +187,7 @@ public final class User {
 	/**
 	 * Get an ArrayList of email addresses linked to the user.
 	 * 
-	 * @return An ArrayList of email addresses.
+	 * @return An <code>ArrayList</code> of email addresses.
 	 */
 	public ArrayList<String> getEmailAddresses() {
 		return emailAddresses;
@@ -212,9 +212,9 @@ public final class User {
 	}
 
 	/**
-	 * Get an ArrayList of phone numbers linked to the user.
+	 * Get an <code>ArrayList</code> of phone numbers linked to the user.
 	 * 
-	 * @return An ArrayList of phone numbers.
+	 * @return An <code>ArrayList</code> of phone numbers.
 	 */
 	public ArrayList<String> getPhoneNumbers() {
 		return phoneNumbers;
