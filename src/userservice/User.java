@@ -23,8 +23,8 @@ public final class User {
 	/**
 	 * Create a user.
 	 * 
-	 * @param name - The name of the user.
-	 * @param age - The age of the user.
+	 * @param name   - The name of the user.
+	 * @param age    - The age of the user.
 	 * @param userId - The user ID.
 	 */
 	public User(String name, int age, int userId) {
@@ -36,10 +36,10 @@ public final class User {
 	/**
 	 * Create a user with an email address.
 	 * 
-	 * @param name - The name of the user.
-	 * @param age - The age of the user.
+	 * @param name   - The name of the user.
+	 * @param age    - The age of the user.
 	 * @param userId - The user ID.
-	 * @param email - An email address.
+	 * @param email  - An email address.
 	 */
 	public User(String name, int age, int userId, String email) {
 		setName(name);
@@ -51,10 +51,10 @@ public final class User {
 	/**
 	 * Create a user with an phone number.
 	 * 
-	 * @param name - The name of the user.
-	 * @param age - The age of the user.
-	 * @param userId - The user ID.
-	 * @param email - An email address.
+	 * @param name        - The name of the user.
+	 * @param age         - The age of the user.
+	 * @param userId      - The user ID.
+	 * @param email       - An email address.
 	 * @param phoneNumber - A phone number.
 	 */
 	public User(String name, int age, int userId, String email, String phoneNumber) {
@@ -176,7 +176,9 @@ public final class User {
 		return emailAddresses;
 	}
 
-	/**Add a phone number to the user.
+	/**
+	 * Add a phone number to the user.
+	 * 
 	 * @param phoneNumber - The phone number to be added.
 	 */
 	public void addPhoneNumber(String phoneNumber) {
@@ -208,7 +210,7 @@ public final class User {
 
 	/**
 	 * @hidden
-	 * @param item - The item to be removed.
+	 * @param item            - The item to be removed.
 	 * @param stringArrayList - An ArrayList of strings.
 	 */
 	private void removeFromStringArrayList(String item, ArrayList<String> stringArrayList) {
