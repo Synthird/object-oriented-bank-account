@@ -8,7 +8,7 @@ This library is not meant for full-blown banking systems in everyday life.
 
 ## Installation
 
-The jar file containing the library is in the [releases page](https://github.com/Synthird/object-oriented-bank-account/releases).
+The library is contained in a jar file in the [releases page](https://github.com/Synthird/object-oriented-bank-account/releases).
 
 **Note:** Inserting the jar file into your project depends on your IDE and build tools.
 
@@ -22,4 +22,4 @@ If there is not a ```lib``` folder at the root folder, create it.
 
 ## License
 
-This repository contains the MIT license. You must give credit if you are going to use its source code.
+This repository contains the MIT license. You must give credit if you are going to use its source code, or the class library.
