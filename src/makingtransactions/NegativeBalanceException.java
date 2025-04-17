@@ -14,8 +14,8 @@ public class NegativeBalanceException extends Exception {
 	 * Throw the NegativeBalanceException, to avoid a negative balance on a bank
 	 * account.
 	 * 
-	 * @param credit  - The credit of the transaction.
-	 * @param balance - The balance of the bank account.
+	 * @param credit  The credit of the transaction.
+	 * @param balance The balance of the bank account.
 	 */
 	public NegativeBalanceException(double credit, double balance) {
 		this.credit = credit;

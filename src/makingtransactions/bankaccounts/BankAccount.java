@@ -22,12 +22,12 @@ public abstract class BankAccount {
 	/**
 	 * Create a bank account with a balance.
 	 * 
-	 * @param balance           - The balance of the account.
-	 * @param accountName       - The name of the account.
-	 * @param currency          - The type of currency.
-	 * @param transitNumber     - The transit number.
-	 * @param institutionNumber - The institution number.
-	 * @param accountNumber     - The account number.
+	 * @param balance           The balance of the account.
+	 * @param accountName       The name of the account.
+	 * @param currency          The type of currency.
+	 * @param transitNumber     The transit number.
+	 * @param institutionNumber The institution number.
+	 * @param accountNumber     The account number.
 	 */
 	public BankAccount(double balance, String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {
@@ -42,11 +42,11 @@ public abstract class BankAccount {
 	/**
 	 * Create a bank account without a balance.
 	 * 
-	 * @param accountName       - The name of the account.
-	 * @param currency          - The type of currency.
-	 * @param transitNumber     - The transit number.
-	 * @param institutionNumber - The institution number.
-	 * @param accountNumber     - The account number.
+	 * @param accountName       The name of the account.
+	 * @param currency          The type of currency.
+	 * @param transitNumber     The transit number.
+	 * @param institutionNumber The institution number.
+	 * @param accountNumber     The account number.
 	 */
 	public BankAccount(String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {
@@ -69,8 +69,8 @@ public abstract class BankAccount {
 	/**
 	 * Change the balance of the bank account.
 	 * 
-	 * @param balance - The balance of the account.
-	 * @throws IllegalArgumentException - If attempting to create a negative
+	 * @param balance The balance of the account.
+	 * @throws IllegalArgumentException If attempting to create a negative
 	 *                                  balance.
 	 */
 	public void setBalance(double balance) throws IllegalArgumentException {
@@ -93,7 +93,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the currency on the bank account.
 	 * 
-	 * @param currency - The type of currency.
+	 * @param currency The type of currency.
 	 */
 	public void setCurrency(String currency) {
 		this.currency = currency;
@@ -111,7 +111,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the name of the bank account.
 	 * 
-	 * @param accountName - The name of the account.
+	 * @param accountName The name of the account.
 	 */
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;
@@ -129,8 +129,8 @@ public abstract class BankAccount {
 	/**
 	 * Add a transaction to the bank account.
 	 * 
-	 * @param transaction - The transaction to be added.
-	 * @throws NegativeBalanceException - If the credit on the transaction is bigger
+	 * @param transaction The transaction to be added.
+	 * @throws NegativeBalanceException If the credit on the transaction is bigger
 	 *                                  than the account balance.
 	 */
 	public void addTransaction(Transaction transaction) throws NegativeBalanceException {
@@ -157,7 +157,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the transit number on the bank account.
 	 * 
-	 * @param transitNumber - The transit number on the account.
+	 * @param transitNumber The transit number on the account.
 	 */
 	public void setTransitNumber(int transitNumber) {
 		this.transitNumber = transitNumber;
@@ -175,7 +175,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the institution number on the bank account.
 	 * 
-	 * @param institutionNumber - The institution number on the account.
+	 * @param institutionNumber The institution number on the account.
 	 */
 	public void setInstitutionNumber(int institutionNumber) {
 		this.institutionNumber = institutionNumber;
@@ -193,7 +193,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the account number for the bank account.
 	 * 
-	 * @param accountNumber - The account number.
+	 * @param accountNumber The account number.
 	 */
 	public void setAccountNumber(int accountNumber) {
 		this.accountNumber = accountNumber;

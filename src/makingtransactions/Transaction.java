@@ -13,9 +13,9 @@ public class Transaction {
 	/**
 	 * Create a transaction with credit and debit.
 	 * 
-	 * @param transactionName - The name of the transaction.
-	 * @param debit           - The debit of the transaction.
-	 * @param credit          - The crebit of the transaction.
+	 * @param transactionName The name of the transaction.
+	 * @param debit           The debit of the transaction.
+	 * @param credit          The crebit of the transaction.
 	 */
 	public Transaction(String transactionName, double debit, double credit) {
 		setTransactionName(transactionName);
@@ -26,7 +26,7 @@ public class Transaction {
 	/**
 	 * Create a transaction without any credit and debit.
 	 * 
-	 * @param transactionName - The name of the transaction.
+	 * @param transactionName The name of the transaction.
 	 */
 	public Transaction(String transactionName) {
 		setTransactionName(transactionName);
@@ -35,7 +35,7 @@ public class Transaction {
 	/**
 	 * Get the name of the transaction.
 	 * 
-	 * @return - The name of the transaction.
+	 * @return The name of the transaction.
 	 */
 	public String getTransactionName() {
 		return transactionName;
@@ -44,7 +44,7 @@ public class Transaction {
 	/**
 	 * Change the name of the transaction.
 	 * 
-	 * @param transactionName - The name of the transaction.
+	 * @param transactionName The name of the transaction.
 	 */
 	public void setTransactionName(String transactionName) {
 		this.transactionName = transactionName;
@@ -62,8 +62,8 @@ public class Transaction {
 	/**
 	 * Change the debit (How much money should be earned) for the transaction.
 	 * 
-	 * @param debit - The debit applied to the transaction.
-	 * @throws IllegalArgumentException - If the debit is a negative number.
+	 * @param debit The debit applied to the transaction.
+	 * @throws IllegalArgumentException If the debit is a negative number.
 	 */
 	public void setDebit(double debit) throws IllegalArgumentException {
 		if (debit >= 0) {
@@ -85,8 +85,8 @@ public class Transaction {
 	/**
 	 * Change the credit (How much money should be spent) for the transaction.
 	 * 
-	 * @param credit - The credit applied to the transaction.
-	 * @throws IllegalArgumentException - If the crebit is a negative number.
+	 * @param credit The credit applied to the transaction.
+	 * @throws IllegalArgumentException If the crebit is a negative number.
 	 */
 	public void setCredit(double credit) throws IllegalArgumentException {
 		if (credit >= 0) {

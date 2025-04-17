@@ -23,9 +23,9 @@ public final class User {
 	/**
 	 * Create a user.
 	 * 
-	 * @param name   - The name of the user.
-	 * @param age    - The age of the user.
-	 * @param userId - The user ID.
+	 * @param name   The name of the user.
+	 * @param age    The age of the user.
+	 * @param userId The user ID.
 	 */
 	public User(String name, int age, int userId) {
 		setName(name);
@@ -36,10 +36,10 @@ public final class User {
 	/**
 	 * Create a user with an email address.
 	 * 
-	 * @param name   - The name of the user.
-	 * @param age    - The age of the user.
-	 * @param userId - The user ID.
-	 * @param email  - An email address.
+	 * @param name   The name of the user.
+	 * @param age    The age of the user.
+	 * @param userId The user ID.
+	 * @param email  An email address.
 	 */
 	public User(String name, int age, int userId, String email) {
 		setName(name);
@@ -51,11 +51,11 @@ public final class User {
 	/**
 	 * Create a user with an phone number.
 	 * 
-	 * @param name        - The name of the user.
-	 * @param age         - The age of the user.
-	 * @param userId      - The user ID.
-	 * @param email       - An email address.
-	 * @param phoneNumber - A phone number.
+	 * @param name        The name of the user.
+	 * @param age         The age of the user.
+	 * @param userId      The user ID.
+	 * @param email       An email address.
+	 * @param phoneNumber A phone number.
 	 */
 	public User(String name, int age, int userId, String email, String phoneNumber) {
 		setName(name);
@@ -77,7 +77,7 @@ public final class User {
 	/**
 	 * Changes the name of the user.
 	 * 
-	 * @param name - The name of the user.
+	 * @param name The name of the user.
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -95,8 +95,8 @@ public final class User {
 	/**
 	 * Set the age of the user.
 	 * 
-	 * @param age - The age of the user.
-	 * @throws IllegalArgumentException - If age is 0 or below.
+	 * @param age The age of the user.
+	 * @throws IllegalArgumentException If age is 0 or below.
 	 */
 	public void setAge(int age) throws IllegalArgumentException {
 		if (age <= 0) {
@@ -114,18 +114,18 @@ public final class User {
 	}
 
 	/**
-	 * Get the userId of the user.
+	 * Get the ID of the user.
 	 * 
-	 * @return The userId of the user.
+	 * @return The ID of the user.
 	 */
 	public int getUserId() {
 		return userId;
 	}
 
 	/**
-	 * Change the userId of the user.
+	 * Change the ID of the user.
 	 * 
-	 * @param userId - The ID of the user.
+	 * @param userId The ID of the user.
 	 */
 	public void setUserId(int userId) {
 		this.userId = userId;
@@ -134,7 +134,7 @@ public final class User {
 	/**
 	 * Get the user's ArrayList of bank accounts.
 	 * 
-	 * @return <code>ArrayList</code> of BankAccount classes.
+	 * @return An ArrayList of BankAccount classes.
 	 */
 	public ArrayList<BankAccount> getBankAccounts() {
 		return bankAccounts;
@@ -143,7 +143,7 @@ public final class User {
 	/**
 	 * Give the user a bank account.
 	 * 
-	 * @param bankAccount - The bank account to be added.
+	 * @param bankAccount The bank account to be added.
 	 */
 	public void addBankAccount(BankAccount bankAccount) {
 		bankAccounts.add(bankAccount);
@@ -156,7 +156,7 @@ public final class User {
 	/**
 	 * Remove a bank account from the user.
 	 * 
-	 * @param bankAccount - The bank account to be removed.
+	 * @param bankAccount The bank account to be removed.
 	 */
 	public void removeBankAccount(BankAccount bankAccount) {
 		boolean removedAccount = bankAccounts.remove(bankAccount);
@@ -169,7 +169,7 @@ public final class User {
 	/**
 	 * Add an email to the ArrayList of email addresses
 	 * 
-	 * @param email - The email to be added.
+	 * @param email The email to be added.
 	 */
 	public void addEmail(String email) {
 		emailAddresses.add(email);
@@ -178,7 +178,7 @@ public final class User {
 	/**
 	 * Remove an email address from the user.
 	 * 
-	 * @param email - The email to be removed.
+	 * @param email The email to be removed.
 	 */
 	public void removeEmail(String email) {
 		removeFromStringArrayList(email, emailAddresses);
@@ -196,7 +196,7 @@ public final class User {
 	/**
 	 * Add a phone number to the user.
 	 * 
-	 * @param phoneNumber - The phone number to be added.
+	 * @param phoneNumber The phone number to be added.
 	 */
 	public void addPhoneNumber(String phoneNumber) {
 		phoneNumbers.add(phoneNumber);
@@ -205,7 +205,7 @@ public final class User {
 	/**
 	 * Remove a phone number from the user.
 	 * 
-	 * @param phoneNumber - The phone number to be removed.
+	 * @param phoneNumber The phone number to be removed.
 	 */
 	public void removePhoneNumber(String phoneNumber) {
 		removeFromStringArrayList(phoneNumber, phoneNumbers);
@@ -227,8 +227,8 @@ public final class User {
 
 	/**
 	 * @hidden
-	 * @param item            - The item to be removed.
-	 * @param stringArrayList - An ArrayList of strings.
+	 * @param item            The item to be removed.
+	 * @param stringArrayList An ArrayList of strings.
 	 */
 	private void removeFromStringArrayList(String item, ArrayList<String> stringArrayList) {
 		if (stringArrayList.contains(item)) {

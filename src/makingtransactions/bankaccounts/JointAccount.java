@@ -16,13 +16,13 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Create a joint account with a balance.
 	 * 
-	 * @param user              - The first user to hold the account.
-	 * @param balance           - The balance of the account.
-	 * @param accountName       - The name of the account.
-	 * @param currency          - The type of currency.
-	 * @param transitNumber     - The transit number.
-	 * @param institutionNumber - The institution number.
-	 * @param accountNumber     - The account number.
+	 * @param user              The first user to hold the account.
+	 * @param balance           The balance of the account.
+	 * @param accountName       The name of the account.
+	 * @param currency          The type of currency.
+	 * @param transitNumber     The transit number.
+	 * @param institutionNumber The institution number.
+	 * @param accountNumber     The account number.
 	 */
 	public JointAccount(User user, double balance, String accountName, String currency, int transitNumber,
 			int institutionNumber, int accountNumber) {
@@ -33,12 +33,12 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Create a joint account without a balance.
 	 * 
-	 * @param user              - The first user to hold the account.
-	 * @param accountName       - The name of the account.
-	 * @param currency          - The type of currency.
-	 * @param transitNumber     - The transit number.
-	 * @param institutionNumber - The institution number.
-	 * @param accountNumber     - The account number.
+	 * @param user              The first user to hold the account.
+	 * @param accountName       The name of the account.
+	 * @param currency          The type of currency.
+	 * @param transitNumber     The transit number.
+	 * @param institutionNumber The institution number.
+	 * @param accountNumber     The account number.
 	 */
 	public JointAccount(User user, String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {
@@ -49,7 +49,7 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Get an ArrayList of users connected to the joint account.
 	 * 
-	 * @return An ArrayLists of users connected to the joint account. This is
+	 * @return An ArrayList of users connected to the joint account. This is
 	 *         <strong>not</strong> the <code>users</code> field of the JointAccount
 	 *         instance/object.
 	 */
@@ -62,7 +62,7 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Connect a user to the joint account.
 	 * 
-	 * @param user - The user to be added to the joint account.
+	 * @param user The user to be added to the joint account.
 	 */
 	public void addUser(User user) {
 		if (!containsUser(user)) {
@@ -74,7 +74,7 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Remove a user from the joint account.
 	 * 
-	 * @param user - The user to be removed from the joint account.
+	 * @param user The user to be removed from the joint account.
 	 */
 	public void removeUser(User user) {
 		if (users.size() > 1) {
@@ -92,7 +92,7 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Check to see if a user is connected to the joint account.
 	 * 
-	 * @param user - The user that is being checked.
+	 * @param user The user that is being checked.
 	 * @return <code>true</code> if the user is connected to the account. If not, it
 	 *         returns <code>false</code>.
 	 */
