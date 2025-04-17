@@ -14,7 +14,7 @@ The jar file containing the library is in the [releases page]().
 
 Download the jar file and place it into the ```lib``` folder, which is located at the root of the project.
 
-![Jar file in the root folder of a non-build tools Java project]()
+![Jar file in the root folder of a non-build tools Java project](https://github.com/user-attachments/assets/1984ea04-bfa1-4796-99f2-e556834e81ec)
 
 If there is not a ```lib``` folder at the root folder, create it.
 
