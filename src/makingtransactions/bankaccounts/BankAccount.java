@@ -108,7 +108,7 @@ public abstract class BankAccount {
 	}
 
 	/**
-	 * Change the name of the bank account
+	 * Change the name of the bank account.
 	 * 
 	 * @param accountName
 	 */
