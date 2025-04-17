@@ -14,8 +14,8 @@ public class Transaction {
 	 * Create a transaction with credit and debit.
 	 * 
 	 * @param transactionName - The name of the transaction.
-	 * @param debit - The debit of the transaction.
-	 * @param credit - The crebit of the transaction.
+	 * @param debit           - The debit of the transaction.
+	 * @param credit          - The crebit of the transaction.
 	 */
 	public Transaction(String transactionName, double debit, double credit) {
 		setTransactionName(transactionName);

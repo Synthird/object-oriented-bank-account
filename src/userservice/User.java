@@ -91,8 +91,8 @@ public final class User {
 	/**
 	 * Set the age of the user.
 	 * 
-	 * @param age
-	 * @throws IllegalArgumentException if age is 0 or below.
+	 * @param age - The age of the user.
+	 * @throws IllegalArgumentException - If age is 0 or below.
 	 */
 	public void setAge(int age) throws IllegalArgumentException {
 		if (age <= 0) {

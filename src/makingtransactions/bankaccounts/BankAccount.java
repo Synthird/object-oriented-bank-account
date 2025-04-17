@@ -22,12 +22,12 @@ public abstract class BankAccount {
 	/**
 	 * Create a bank account with a balance.
 	 * 
-	 * @param balance - The balance of the account.
-	 * @param accountName - The name of the account.
-	 * @param currency - The type of currency.
-	 * @param transitNumber - The transit number.
+	 * @param balance           - The balance of the account.
+	 * @param accountName       - The name of the account.
+	 * @param currency          - The type of currency.
+	 * @param transitNumber     - The transit number.
 	 * @param institutionNumber - The institution number.
-	 * @param accountNumber - The account number.
+	 * @param accountNumber     - The account number.
 	 */
 	public BankAccount(double balance, String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {
@@ -42,11 +42,11 @@ public abstract class BankAccount {
 	/**
 	 * Create a bank account without a balance.
 	 * 
-	 * @param accountName - The name of the account.
-	 * @param currency - The type of currency.
-	 * @param transitNumber - The transit number.
+	 * @param accountName       - The name of the account.
+	 * @param currency          - The type of currency.
+	 * @param transitNumber     - The transit number.
 	 * @param institutionNumber - The institution number.
-	 * @param accountNumber - The account number.
+	 * @param accountNumber     - The account number.
 	 */
 	public BankAccount(String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {
@@ -70,7 +70,8 @@ public abstract class BankAccount {
 	 * Change the balance of the bank account.
 	 * 
 	 * @param balance - The balance of the account.
-	 * @throws IllegalArgumentException - If attempting to create a negative balance.
+	 * @throws IllegalArgumentException - If attempting to create a negative
+	 *                                  balance.
 	 */
 	public void setBalance(double balance) throws IllegalArgumentException {
 		if (balance >= 0) {
@@ -129,7 +130,8 @@ public abstract class BankAccount {
 	 * Add a transaction to the bank account.
 	 * 
 	 * @param transaction - The transaction to be added.
-	 * @throws NegativeBalanceException - If the credit on the transaction is bigger than the account balance.
+	 * @throws NegativeBalanceException - If the credit on the transaction is bigger
+	 *                                  than the account balance.
 	 */
 	public void addTransaction(Transaction transaction) throws NegativeBalanceException {
 		double credit = transaction.getCredit();
