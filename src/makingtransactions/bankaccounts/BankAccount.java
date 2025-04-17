@@ -6,7 +6,7 @@ import makingtransactions.NegativeBalanceException;
 import makingtransactions.Transaction;
 
 /**
- * An abstract bank account class for creating different kinds of bank account.
+ * An abstract bank account class for creating different kinds of bank accounts.
  * 
  * @author Synthird
  * @version 1.0.0

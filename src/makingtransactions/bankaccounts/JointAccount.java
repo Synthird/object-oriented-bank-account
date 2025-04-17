@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import userservice.User;
 
 /**
- * A joint account class for creating a joint account with multiple holders.
+ * A joint account class for creating a joint account containing multiple holders.
  * 
  * @author Synthird
  * @version 1.0.0

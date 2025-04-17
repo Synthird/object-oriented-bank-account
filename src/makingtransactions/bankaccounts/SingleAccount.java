@@ -3,7 +3,7 @@ package makingtransactions.bankaccounts;
 import userservice.User;
 
 /**
- * A single account class for creating a single account with only one holder.
+ * A single account class for creating a single account containing only one holder.
  * 
  * @author Synthird
  * @version 1.0.0
