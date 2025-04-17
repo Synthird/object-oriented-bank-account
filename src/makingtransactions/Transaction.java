@@ -35,7 +35,7 @@ public class Transaction {
 	/**
 	 * Get the name of the transaction.
 	 * 
-	 * @return The name of the transaction.
+	 * @return - The name of the transaction.
 	 */
 	public String getTransactionName() {
 		return transactionName;
@@ -44,7 +44,7 @@ public class Transaction {
 	/**
 	 * Change the name of the transaction.
 	 * 
-	 * @param transactionName
+	 * @param transactionName - The name of the transaction.
 	 */
 	public void setTransactionName(String transactionName) {
 		this.transactionName = transactionName;
