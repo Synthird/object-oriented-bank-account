@@ -130,7 +130,7 @@ public final class User {
 	/**
 	 * Get the user's ArrayList of bank accounts.
 	 * 
-	 * @return An ArrayList of BankAccount classes.
+	 * @return <code>ArrayList</code> of BankAccount classes.
 	 */
 	public ArrayList<BankAccount> getBankAccounts() {
 		return bankAccounts;
@@ -146,6 +146,19 @@ public final class User {
 
 		if (bankAccount instanceof JointAccount) {
 			((JointAccount) bankAccount).addUser(this);
+		}
+	}
+
+	/**
+	 * Remove a bank account from the user.
+	 * 
+	 * @param bankAccount - The bank account to be removed.
+	 */
+	public void removeBankAccount(BankAccount bankAccount) {
+		boolean removedAccount = bankAccounts.remove(bankAccount);
+
+		if (removedAccount && bankAccount instanceof JointAccount) {
+			((JointAccount) bankAccount).removeUser(this);
 		}
 	}
 
