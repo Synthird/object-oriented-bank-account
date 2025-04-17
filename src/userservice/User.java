@@ -38,7 +38,7 @@ public final class User {
 	 * 
 	 * @param name - The name of the user.
 	 * @param age - The age of the user.
-	 * @param userId -- The user ID.
+	 * @param userId - The user ID.
 	 * @param email - An email address.
 	 */
 	public User(String name, int age, int userId, String email) {
