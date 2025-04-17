@@ -16,11 +16,11 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Create a joint account with a balance.
 	 * 
-	 * @param user
-	 * @param balance
-	 * @param accountName
-	 * @param currency
-	 * @param transitNumber
+	 * @param user - The first user to hold the account.
+	 * @param balance - The balance of the account.
+	 * @param accountName - The name of the account.
+	 * @param currency - The type of currency.
+	 * @param transitNumber - The transit number.
 	 * @param institutionNumber
 	 * @param accountNumber
 	 */
@@ -33,12 +33,12 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Create a joint account without a balance.
 	 * 
-	 * @param user
-	 * @param accountName
-	 * @param currency
-	 * @param transitNumber
-	 * @param institutionNumber
-	 * @param accountNumber
+	 * @param user - The first user to hold the account.
+	 * @param accountName - The name of the account.
+	 * @param currency - The type of currency.
+	 * @param transitNumber - The transit number.
+	 * @param institutionNumber - The institution number.
+	 * @param accountNumber - The account number.
 	 */
 	public JointAccount(User user, String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {

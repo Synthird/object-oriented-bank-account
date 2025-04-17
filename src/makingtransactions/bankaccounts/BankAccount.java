@@ -22,12 +22,12 @@ public abstract class BankAccount {
 	/**
 	 * Create a bank account with a balance.
 	 * 
-	 * @param balance
-	 * @param accountName
-	 * @param currency
-	 * @param transitNumber
-	 * @param institutionNumber
-	 * @param accountNumber
+	 * @param balance - The balance of the account.
+	 * @param accountName - The name of the account.
+	 * @param currency - The type of currency.
+	 * @param transitNumber - The transit number.
+	 * @param institutionNumber - The institution number.
+	 * @param accountNumber - The account number.
 	 */
 	public BankAccount(double balance, String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {
@@ -42,11 +42,11 @@ public abstract class BankAccount {
 	/**
 	 * Create a bank account without a balance.
 	 * 
-	 * @param accountName
-	 * @param currency
-	 * @param transitNumber
-	 * @param institutionNumber
-	 * @param accountNumber
+	 * @param accountName - The name of the account.
+	 * @param currency - The type of currency.
+	 * @param transitNumber - The transit number.
+	 * @param institutionNumber - The institution number.
+	 * @param accountNumber - The account number.
 	 */
 	public BankAccount(String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {
@@ -69,8 +69,8 @@ public abstract class BankAccount {
 	/**
 	 * Change the balance of the bank account.
 	 * 
-	 * @param balance
-	 * @throws IllegalArgumentException
+	 * @param balance - The balance of the account.
+	 * @throws IllegalArgumentException - If attempting to create a negative balance.
 	 */
 	public void setBalance(double balance) throws IllegalArgumentException {
 		if (balance >= 0) {
@@ -92,7 +92,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the currency on the bank account.
 	 * 
-	 * @param currency
+	 * @param currency - The type of currency.
 	 */
 	public void setCurrency(String currency) {
 		this.currency = currency;
@@ -110,7 +110,7 @@ public abstract class BankAccount {
 	/**
 	 * Change the name of the bank account.
 	 * 
-	 * @param accountName
+	 * @param accountName - The name of the account.
 	 */
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;

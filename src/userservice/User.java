@@ -23,9 +23,9 @@ public final class User {
 	/**
 	 * Create a user.
 	 * 
-	 * @param name
-	 * @param age
-	 * @param userId
+	 * @param name - The name of the user.
+	 * @param age - The age of the user.
+	 * @param userId - The user ID.
 	 */
 	public User(String name, int age, int userId) {
 		setName(name);
@@ -36,10 +36,10 @@ public final class User {
 	/**
 	 * Create a user with an email address.
 	 * 
-	 * @param name
-	 * @param age
-	 * @param userId
-	 * @param email
+	 * @param name - The name of the user.
+	 * @param age - The age of the user.
+	 * @param userId -- The user ID.
+	 * @param email - An email address.
 	 */
 	public User(String name, int age, int userId, String email) {
 		setName(name);
@@ -51,11 +51,11 @@ public final class User {
 	/**
 	 * Create a user with an phone number.
 	 * 
-	 * @param name
-	 * @param age
-	 * @param userId
-	 * @param email
-	 * @param phoneNumber
+	 * @param name - The name of the user.
+	 * @param age - The age of the user.
+	 * @param userId - The user ID.
+	 * @param email - An email address.
+	 * @param phoneNumber - A phone number.
 	 */
 	public User(String name, int age, int userId, String email, String phoneNumber) {
 		setName(name);

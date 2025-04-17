@@ -13,9 +13,9 @@ public class Transaction {
 	/**
 	 * Create a transaction with credit and debit.
 	 * 
-	 * @param transactionName
-	 * @param debit
-	 * @param credit
+	 * @param transactionName - The name of the transaction.
+	 * @param debit - The debit of the transaction.
+	 * @param credit - The crebit of the transaction.
 	 */
 	public Transaction(String transactionName, double debit, double credit) {
 		setTransactionName(transactionName);
@@ -26,7 +26,7 @@ public class Transaction {
 	/**
 	 * Create a transaction without any credit and debit.
 	 * 
-	 * @param transactionName
+	 * @param transactionName - The name of the transaction.
 	 */
 	public Transaction(String transactionName) {
 		setTransactionName(transactionName);

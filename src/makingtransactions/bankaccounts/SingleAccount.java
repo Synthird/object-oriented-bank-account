@@ -14,13 +14,13 @@ public class SingleAccount extends BankAccount {
 	/**
 	 * Create a single account with a balance.
 	 * 
-	 * @param userHolder
-	 * @param balance
-	 * @param accountName
-	 * @param currency
-	 * @param transitNumber
-	 * @param institutionNumber
-	 * @param accountNumber
+	 * @param userHolder - The account holder.
+	 * @param balance - The balance of the account.
+	 * @param accountName - The name of the account.
+	 * @param currency - The type of currency.
+	 * @param transitNumber - The transit number.
+	 * @param institutionNumber - The institution number.
+	 * @param accountNumber - The account number.
 	 */
 	public SingleAccount(User userHolder, double balance, String accountName, String currency, int transitNumber,
 			int institutionNumber, int accountNumber) {
@@ -31,12 +31,12 @@ public class SingleAccount extends BankAccount {
 	/**
 	 * Create a single account without a balance.
 	 * 
-	 * @param userHolder
-	 * @param accountName
-	 * @param currency
-	 * @param transitNumber
-	 * @param institutionNumber
-	 * @param accountNumber
+	 * @param userHolder - The account holder.
+	 * @param accountName - The name of the account.
+	 * @param currency - The type of currency.
+	 * @param transitNumber - The transit number.
+	 * @param institutionNumber - The institution number.
+	 * @param accountNumber - The account number.
 	 */
 	public SingleAccount(User userHolder, String accountName, String currency, int transitNumber, int institutionNumber,
 			int accountNumber) {
