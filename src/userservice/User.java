@@ -66,6 +66,8 @@ public final class User {
 	}
 
 	/**
+	 * Get the name of the user.
+	 * 
 	 * @return The name of the user.
 	 */
 	public String getName() {
@@ -82,6 +84,8 @@ public final class User {
 	}
 
 	/**
+	 * Get the age of the user.
+	 * 
 	 * @return The age of the user.
 	 */
 	public int getAge() {
