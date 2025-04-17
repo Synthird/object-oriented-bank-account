@@ -6,7 +6,7 @@ An OOP class library for simulating bank accounts.
 
 ## Installation
 
-The jar file containing the library is in the [releases page]().
+The jar file containing the library is in the [releases page](https://github.com/Synthird/object-oriented-bank-account/releases).
 
 **Note:** Inserting the jar file into your project depends on your IDE and build tools.
 
