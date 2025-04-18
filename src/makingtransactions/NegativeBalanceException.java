@@ -24,6 +24,6 @@ public class NegativeBalanceException extends Exception {
 
 	@Override
 	public String toString() {
-		return String.format("Credit %.2f is greater than balance %.2f! No values were changed.", credit, balance);
+		return String.format("Credit %.2f is bigger than balance %.2f! No values were changed.", credit, balance);
 	}
 }
