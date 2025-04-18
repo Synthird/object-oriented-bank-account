@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import userservice.User;
 
 /**
- * A joint account class for creating a joint account containing multiple holders.
+ * A joint account class for creating a joint account containing multiple
+ * holders.
  * 
  * @author Synthird
  * @version 1.0.0
@@ -49,7 +50,8 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Get an <code>ArrayList</code> of users connected to the joint account.
 	 * 
-	 * @return An <code>ArrayList</code> of users connected to the joint account. This is
+	 * @return An <code>ArrayList</code> of users connected to the joint account.
+	 *         This is
 	 *         not the <code>users</code> field of the JointAccount
 	 *         instance/object.
 	 */

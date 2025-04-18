@@ -187,7 +187,7 @@ public final class User {
 	}
 
 	/**
-	 * Get an ArrayList of email addresses linked to the user.
+	 * Get an <code>ArrayList</code> of email addresses linked to the user.
 	 * 
 	 * @return An <code>ArrayList</code> of email addresses.
 	 */
