@@ -59,6 +59,10 @@ public class SingleAccount extends BankAccount {
 	 * @param userHolder The account holder.
 	 */
 	public void setUserHolder(User userHolder) {
+		if (this.userHolder != null) {
+			this.userHolder.removeBankAccount(this);
+		}
+
 		if (!userHolder.getBankAccounts().contains(this)) {
 			this.userHolder = userHolder;
 			userHolder.addBankAccount(this);
