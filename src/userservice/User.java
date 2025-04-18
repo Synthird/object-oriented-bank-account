@@ -100,7 +100,7 @@ public final class User {
 	 */
 	public void setAge(int age) throws IllegalArgumentException {
 		if (age <= 0) {
-			throw new IllegalArgumentException("The age of a user cannot be 0 or below!");
+			throw new IllegalArgumentException("A user with an age of 0 or below is not allowed!");
 		} else {
 			this.age = age;
 		}
