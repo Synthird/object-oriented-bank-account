@@ -146,10 +146,12 @@ public final class User {
 	 * @param bankAccount The bank account to be added.
 	 */
 	public void addBankAccount(BankAccount bankAccount) {
-		bankAccounts.add(bankAccount);
+		if (!bankAccounts.contains(bankAccount)) {
+			bankAccounts.add(bankAccount);
 
-		if (bankAccount instanceof JointAccount) {
-			((JointAccount) bankAccount).addUser(this);
+			if (bankAccount instanceof JointAccount) {
+				((JointAccount) bankAccount).addUser(this);
+			}
 		}
 	}
 
