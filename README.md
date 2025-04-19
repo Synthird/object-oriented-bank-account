@@ -8,7 +8,7 @@ This library is not meant for full-blown banking systems in everyday life.
 
 ## Installation
 
-The library is contained in a jar file in the [releases page](https://github.com/Synthird/object-oriented-bank-account/releases).
+The library is contained in a jar file in the [releases page](https://github.com/Synthird/object-oriented-bank-account/releases/latest).
 
 **Note:** Inserting the jar file into your project depends on your IDE and build tools.
 
