@@ -22,4 +22,4 @@ If there is not a ```lib``` folder at the root folder, create it.
 
 ## License
 
-This repository contains the MIT license. You must give credit if you are going to use its source code, or the class library.
+This repository contains the MIT license. You must give credit if you are going to use its source code or the class library.
