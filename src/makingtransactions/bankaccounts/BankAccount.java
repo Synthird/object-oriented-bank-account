@@ -67,7 +67,7 @@ public abstract class BankAccount {
 	}
 
 	/**
-	 * Change the balance of the bank account.
+	 * Set the balance of the bank account.
 	 * 
 	 * @param balance The balance of the account.
 	 * @throws IllegalArgumentException If attempting to create a negative
@@ -91,7 +91,7 @@ public abstract class BankAccount {
 	}
 
 	/**
-	 * Change the currency on the bank account.
+	 * Set the currency on the bank account.
 	 * 
 	 * @param currency The type of currency.
 	 */
@@ -109,7 +109,7 @@ public abstract class BankAccount {
 	}
 
 	/**
-	 * Change the name of the bank account.
+	 * Set the name of the bank account.
 	 * 
 	 * @param accountName The name of the account.
 	 */
@@ -155,7 +155,7 @@ public abstract class BankAccount {
 	}
 
 	/**
-	 * Change the transit number on the bank account.
+	 * Set the transit number on the bank account.
 	 * 
 	 * @param transitNumber The transit number on the account.
 	 */
@@ -173,7 +173,7 @@ public abstract class BankAccount {
 	}
 
 	/**
-	 * Change the institution number on the bank account.
+	 * Set the institution number on the bank account.
 	 * 
 	 * @param institutionNumber The institution number on the account.
 	 */
@@ -191,7 +191,7 @@ public abstract class BankAccount {
 	}
 
 	/**
-	 * Change the account number for the bank account.
+	 * Set the account number for the bank account.
 	 * 
 	 * @param accountNumber The account number.
 	 */

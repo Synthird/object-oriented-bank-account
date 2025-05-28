@@ -55,7 +55,7 @@ public class SingleAccount extends BankAccount {
 	}
 
 	/**
-	 * Change the holder of the account.
+	 * Set the holder of the account.
 	 * 
 	 * @param userHolder The account holder.
 	 */

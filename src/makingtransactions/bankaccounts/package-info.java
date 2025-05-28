@@ -1,5 +1,5 @@
 /**
- * A package of bank account classes for making bank accounts.
+ * A package of bank account classes.
  * 
  * @author Synthird
  * @version 1.0.0

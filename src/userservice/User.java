@@ -75,7 +75,7 @@ public final class User {
 	}
 
 	/**
-	 * Changes the name of the user.
+	 * Set the name of the user.
 	 * 
 	 * @param name The name of the user.
 	 */
@@ -123,7 +123,7 @@ public final class User {
 	}
 
 	/**
-	 * Change the ID of the user.
+	 * Set the ID of the user.
 	 * 
 	 * @param userId The ID of the user.
 	 */
