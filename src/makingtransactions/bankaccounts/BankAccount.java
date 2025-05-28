@@ -15,9 +15,9 @@ public abstract class BankAccount {
 	private double balance;
 	private String currency, accountName;
 
-	private ArrayList<Transaction> transactions = new ArrayList<Transaction>();
-
 	private int transitNumber, institutionNumber, accountNumber;
+
+	private ArrayList<Transaction> transactions = new ArrayList<Transaction>();
 
 	/**
 	 * Create a bank account with a balance.
