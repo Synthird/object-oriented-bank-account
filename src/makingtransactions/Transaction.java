@@ -4,7 +4,7 @@ package makingtransactions;
  * A transaction class for creating transactions.
  * 
  * @author Synthird
- * @version 1.0.0
+ * @version 1.0.1
  */
 public class Transaction {
 	private String transactionName;
@@ -14,8 +14,8 @@ public class Transaction {
 	 * Create a transaction with credit and debit.
 	 * 
 	 * @param transactionName The name of the transaction.
-	 * @param debit           The debit of the transaction.
-	 * @param credit          The crebit of the transaction.
+	 * @param debit           How much money should be earned.
+	 * @param credit          How much money should be spent.
 	 */
 	public Transaction(String transactionName, double debit, double credit) {
 		setTransactionName(transactionName);
@@ -42,7 +42,7 @@ public class Transaction {
 	}
 
 	/**
-	 * Change the name of the transaction.
+	 * Set the name of the transaction.
 	 * 
 	 * @param transactionName The name of the transaction.
 	 */
@@ -60,7 +60,7 @@ public class Transaction {
 	}
 
 	/**
-	 * Change the debit (How much money should be earned) for the transaction.
+	 * Set the debit (How much money should be earned) for the transaction.
 	 * 
 	 * @param debit The debit applied to the transaction.
 	 * @throws IllegalArgumentException If the debit is a negative number.
@@ -83,7 +83,7 @@ public class Transaction {
 	}
 
 	/**
-	 * Change the credit (How much money should be spent) for the transaction.
+	 * Set the credit (How much money should be spent) for the transaction.
 	 * 
 	 * @param credit The credit applied to the transaction.
 	 * @throws IllegalArgumentException If the crebit is a negative number.

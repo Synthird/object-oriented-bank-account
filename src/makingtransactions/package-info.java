@@ -1,7 +1,7 @@
 /**
- * Classes related to transactions.
+ * Classes related to making transactions.
  * 
  * @author Synthird
- * @version 1.0.0
+ * @version 1.0.1
  */
 package makingtransactions;
