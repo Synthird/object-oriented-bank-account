@@ -3,11 +3,11 @@ package makingtransactions.bankaccounts;
 import userservice.User;
 
 /**
- * A single account class for creating a single account containing only one
+ * A bank account class for creating a single account containing only one
  * holder.
  * 
  * @author Synthird
- * @version 1.0.0
+ * @version 1.0.1
  */
 public class SingleAccount extends BankAccount {
 	private User userHolder;

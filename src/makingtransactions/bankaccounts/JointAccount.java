@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import userservice.User;
 
 /**
- * A joint account class for creating a joint account containing multiple
+ * A bank account class for creating a joint account containing multiple
  * holders.
  * 
  * @author Synthird
- * @version 1.0.0
+ * @version 1.0.1
  */
 public class JointAccount extends BankAccount {
 	private ArrayList<User> users = new ArrayList<User>();
