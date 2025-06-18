@@ -9,7 +9,7 @@ import makingtransactions.bankaccounts.JointAccount;
  * A class for creating a user.
  * 
  * @author Synthird
- * @version 1.0.0
+ * @version 1.0.1
  */
 public final class User {
 	private String name;

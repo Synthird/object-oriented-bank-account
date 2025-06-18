@@ -1,10 +1,10 @@
 package makingtransactions;
 
 /**
- * A transaction class for creating transactions.
+ * A class for creating transactions.
  * 
  * @author Synthird
- * @version 1.0.1
+ * @version 1.0.2
  */
 public class Transaction {
 	private String transactionName;
