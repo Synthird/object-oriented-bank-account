@@ -1,5 +1,5 @@
 /**
- * Classes related to making transactions.
+ * Classes for making transactions.
  * 
  * @author Synthird
  * @version 1.0.1

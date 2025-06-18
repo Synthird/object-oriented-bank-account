@@ -6,7 +6,7 @@ import makingtransactions.bankaccounts.BankAccount;
 import makingtransactions.bankaccounts.JointAccount;
 
 /**
- * A user class for creating a user.
+ * A class for creating a user.
  * 
  * @author Synthird
  * @version 1.0.0
