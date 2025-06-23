@@ -2,7 +2,7 @@
 
 An OOP class library for simulating bank accounts.
 
-This library is not meant for full-blown banking systems in everyday life.
+It is not meant for full-blown banking systems in everyday life.
 
 [Documentation](https://synthird.github.io/object-oriented-bank-account/) is also available.
 
