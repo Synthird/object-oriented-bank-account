@@ -17,15 +17,15 @@ public class JointAccount extends BankAccount {
 	/**
 	 * Create a joint account with a balance.
 	 * 
-	 * @param user              The first user to hold the account.
 	 * @param balance           The balance of the account.
+	 * @param user              The first user to hold the account.
 	 * @param accountName       The name of the account.
 	 * @param currency          The type of currency.
 	 * @param transitNumber     The transit number.
 	 * @param institutionNumber The institution number.
 	 * @param accountNumber     The account number.
 	 */
-	public JointAccount(User user, double balance, String accountName, String currency, int transitNumber,
+	public JointAccount(double balance, User user, String accountName, String currency, int transitNumber,
 			int institutionNumber, int accountNumber) {
 		super(balance, accountName, currency, transitNumber, institutionNumber, accountNumber);
 		addUser(user);

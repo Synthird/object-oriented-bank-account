@@ -15,15 +15,15 @@ public class SingleAccount extends BankAccount {
 	/**
 	 * Create a single account with a balance.
 	 * 
-	 * @param userHolder        The account holder.
 	 * @param balance           The balance of the account.
+	 * @param userHolder        The account holder.
 	 * @param accountName       The name of the account.
 	 * @param currency          The type of currency.
 	 * @param transitNumber     The transit number.
 	 * @param institutionNumber The institution number.
 	 * @param accountNumber     The account number.
 	 */
-	public SingleAccount(User userHolder, double balance, String accountName, String currency, int transitNumber,
+	public SingleAccount(double balance, User userHolder, String accountName, String currency, int transitNumber,
 			int institutionNumber, int accountNumber) {
 		super(balance, accountName, currency, transitNumber, institutionNumber, accountNumber);
 		setUserHolder(userHolder);
