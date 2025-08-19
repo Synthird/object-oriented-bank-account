@@ -4,11 +4,12 @@ package makingtransactions;
  * A class for creating transactions.
  * 
  * @author Synthird
- * @version 1.0.2
+ * @version 1.0.3
  */
 public class Transaction {
 	private String transactionName;
 	private double debit, credit;
+	private int transactionId;
 
 	/**
 	 * Create a transaction with credit and debit.
@@ -17,8 +18,9 @@ public class Transaction {
 	 * @param debit           How much money should be earned.
 	 * @param credit          How much money should be spent.
 	 */
-	public Transaction(String transactionName, double debit, double credit) {
+	public Transaction(String transactionName, int transactionId, double debit, double credit) {
 		setTransactionName(transactionName);
+		setTransactionId(transactionId);
 		setDebit(debit);
 		setCredit(credit);
 	}
@@ -28,8 +30,9 @@ public class Transaction {
 	 * 
 	 * @param transactionName The name of the transaction.
 	 */
-	public Transaction(String transactionName) {
+	public Transaction(String transactionName, int transactionId) {
 		setTransactionName(transactionName);
+		setTransactionId(transactionId);
 	}
 
 	/**
@@ -80,6 +83,24 @@ public class Transaction {
 	 */
 	public double getCredit() {
 		return credit;
+	}
+
+	/**
+	 * Set the name of the transaction.
+	 * 
+	 * @param transactionId
+	 */
+	public void setTransactionId(int transactionId) {
+		this.transactionId = transactionId;
+	}
+
+	/**
+	 * Get the ID of the transaction.
+	 * 
+	 * @return
+	 */
+	public int getTransactionId() {
+		return transactionId;
 	}
 
 	/**
