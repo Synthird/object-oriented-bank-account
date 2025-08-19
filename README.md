@@ -40,20 +40,27 @@ public class TestZone {
 		System.out.println("--- Adding and removing joint account users ---");
 
 		System.out.println(jointAccount.getUsers());
+
 		jointAccount.addUser(wow);
 		System.out.println(jointAccount.getUsers());
+
 		jointAccount.addUser(wow);
 		System.out.println(jointAccount.getUsers());
 
 		jointAccount.removeUser(user);
 		System.out.println(jointAccount.getUsers());
+
 		jointAccount.removeUser(wow);
 		System.out.println(jointAccount.getUsers());
 
 		System.out.println("--- TRANSACTIONS ---");
+
 		Transaction transaction = new Transaction("Groceries", 0, 0, 12);
+
 		System.out.println("Single account before: " + singleAccount.getBalance());
+
 		singleAccount.addTransaction(transaction);
+
 		System.out.println("Single account now: " + singleAccount.getBalance());
 		System.out.println("Single account transactions: " + singleAccount.getTransactions());
 	}
