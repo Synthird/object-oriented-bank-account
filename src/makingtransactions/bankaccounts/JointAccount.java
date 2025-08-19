@@ -9,7 +9,7 @@ import userservice.User;
  * holders.
  * 
  * @author Synthird
- * @version 1.0.1
+ * @version 1.0.2
  */
 public class JointAccount extends BankAccount {
 	private ArrayList<User> users = new ArrayList<User>();

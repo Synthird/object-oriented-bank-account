@@ -7,7 +7,7 @@ import userservice.User;
  * holder.
  * 
  * @author Synthird
- * @version 1.0.1
+ * @version 1.0.2
  */
 public class SingleAccount extends BankAccount {
 	private User userHolder;

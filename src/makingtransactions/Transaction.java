@@ -4,7 +4,7 @@ package makingtransactions;
  * A class for creating transactions.
  * 
  * @author Synthird
- * @version 1.0.3
+ * @version 1.0.4
  */
 public class Transaction {
 	private String transactionName;
