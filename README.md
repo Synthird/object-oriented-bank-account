@@ -6,6 +6,61 @@ It is not meant for full-blown banking systems in everyday life.
 
 [Documentation](https://synthird.github.io/object-oriented-bank-account/) is also available.
 
+<details>
+<summary>Sample code</summary>
+
+```Java
+import makingtransactions.NegativeBalanceException;
+import makingtransactions.Transaction;
+import makingtransactions.bankaccounts.JointAccount;
+import makingtransactions.bankaccounts.SingleAccount;
+import userservice.User;
+
+public class TestZone {
+	public static void main(String[] args) throws NegativeBalanceException {
+		User user = new User("User", 15, 25);
+		User wow = new User("Wow", 15, 21);
+
+		SingleAccount singleAccount = new SingleAccount(45, user, "Single", "USD", 152, 23, 12);
+		JointAccount jointAccount = new JointAccount(user, "Joint", "USD", 02, 01, 20);
+
+		System.out.println("--- Swapping single account owners ---");
+
+		System.out.println("User accounts: " + user.getBankAccounts());
+		System.out.println("Wow accounts: " + wow.getBankAccounts());
+
+		singleAccount.setUserHolder(wow);
+
+		System.out.println("\nSwapped holder to wow:\n");
+		System.out.println("User holder: " + singleAccount.getUserHolder());
+
+		System.out.println("User accounts: " + user.getBankAccounts());
+		System.out.println("Wow accounts: " + wow.getBankAccounts());
+
+		System.out.println("--- Adding and removing joint account users ---");
+
+		System.out.println(jointAccount.getUsers());
+		jointAccount.addUser(wow);
+		System.out.println(jointAccount.getUsers());
+		jointAccount.addUser(wow);
+		System.out.println(jointAccount.getUsers());
+
+		jointAccount.removeUser(user);
+		System.out.println(jointAccount.getUsers());
+		jointAccount.removeUser(wow);
+		System.out.println(jointAccount.getUsers());
+
+		System.out.println("--- TRANSACTIONS ---");
+		Transaction transaction = new Transaction("Groceries", 0, 0, 12);
+		System.out.println("Single account before: " + singleAccount.getBalance());
+		singleAccount.addTransaction(transaction);
+		System.out.println("Single account now: " + singleAccount.getBalance());
+		System.out.println("Single account transactions: " + singleAccount.getTransactions());
+	}
+}
+```
+</details>
+
 ## Installation
 
 The library is contained in a jar file in the [releases page](https://github.com/Synthird/object-oriented-bank-account/releases/latest).
