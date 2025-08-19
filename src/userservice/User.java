@@ -9,7 +9,7 @@ import makingtransactions.bankaccounts.JointAccount;
  * A class for creating a user.
  * 
  * @author Synthird
- * @version 1.0.1
+ * @version 1.0.2
  */
 public final class User {
 	private String name;
@@ -49,7 +49,7 @@ public final class User {
 	}
 
 	/**
-	 * Create a user with an phone number.
+	 * Create a user with an email and a phone number.
 	 * 
 	 * @param name        The name of the user.
 	 * @param age         The age of the user.
