@@ -20,8 +20,7 @@ public class Transaction {
 	 * @param credit          How much money should be spent.
 	 */
 	public Transaction(String transactionName, int transactionId, double debit, double credit) {
-		setTransactionName(transactionName);
-		setTransactionId(transactionId);
+		setNameAndId(transactionName, transactionId);
 		setDebit(debit);
 		setCredit(credit);
 	}
@@ -33,8 +32,7 @@ public class Transaction {
 	 * @param transactionId   The ID of the transaction.
 	 */
 	public Transaction(String transactionName, int transactionId) {
-		setTransactionName(transactionName);
-		setTransactionId(transactionId);
+		setNameAndId(transactionName, transactionId);
 	}
 
 	/**
@@ -117,6 +115,16 @@ public class Transaction {
 		} else {
 			throw new IllegalArgumentException("A negative credit is not allowed!");
 		}
+	}
+
+	/**
+	 * @hidden
+	 * @param transactionName Transaction name.
+	 * @param transactionId Transaction ID.
+	 */
+	private void setNameAndId(String transactionName, int transactionId) {
+		setTransactionName(transactionName);
+		setTransactionId(transactionId);
 	}
 
 	@Override
