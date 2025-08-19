@@ -16,9 +16,7 @@ public final class User {
 	private int age, userId;
 
 	private ArrayList<BankAccount> bankAccounts = new ArrayList<BankAccount>();
-
-	private ArrayList<String> emailAddresses = new ArrayList<String>();
-	private ArrayList<String> phoneNumbers = new ArrayList<String>();
+	private ArrayList<String> emailAddresses = new ArrayList<String>(), phoneNumbers = new ArrayList<String>();
 
 	/**
 	 * Create a user.
