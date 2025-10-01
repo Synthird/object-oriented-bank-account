@@ -31,7 +31,7 @@ public class TestZone {
 
 		singleAccount.setUserHolder(wow);
 
-		System.out.println("\nSwapped holder to wow:\n");
+		System.out.println("\nSwapped holder to Wow:\n");
 		System.out.println("User holder: " + singleAccount.getUserHolder());
 
 		System.out.println("User accounts: " + user.getBankAccounts());
