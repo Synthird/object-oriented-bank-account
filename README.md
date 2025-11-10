@@ -19,7 +19,7 @@ import userservice.User;
 public class TestZone {
 	public static void main(String[] args) throws NegativeBalanceException {
 		User user = new User("User", 15, 25);
-		User wow = new User("Wow", 15, 21);
+		User john = new User("John", 15, 21);
 
 		SingleAccount singleAccount = new SingleAccount(45, user, "Single", "USD", 152, 23, 12);
 		JointAccount jointAccount = new JointAccount(user, "Joint", "USD", 02, 01, 20);
@@ -27,30 +27,30 @@ public class TestZone {
 		System.out.println("--- Swapping single account owners ---");
 
 		System.out.println("User accounts: " + user.getBankAccounts());
-		System.out.println("Wow accounts: " + wow.getBankAccounts());
+		System.out.println("john accounts: " + john.getBankAccounts());
 
-		singleAccount.setUserHolder(wow);
+		singleAccount.setUserHolder(john);
 
-		System.out.println("\nSwapped holder to Wow:\n");
+		System.out.println("\nSwapped holder to john:\n");
 		System.out.println("User holder: " + singleAccount.getUserHolder());
 
 		System.out.println("User accounts: " + user.getBankAccounts());
-		System.out.println("Wow accounts: " + wow.getBankAccounts());
+		System.out.println("john accounts: " + john.getBankAccounts());
 
 		System.out.println("--- Adding and removing joint account users ---");
 
 		System.out.println(jointAccount.getUsers());
 
-		jointAccount.addUser(wow);
+		jointAccount.addUser(john);
 		System.out.println(jointAccount.getUsers());
 
-		jointAccount.addUser(wow);
+		jointAccount.addUser(john);
 		System.out.println(jointAccount.getUsers());
 
 		jointAccount.removeUser(user);
 		System.out.println(jointAccount.getUsers());
 
-		jointAccount.removeUser(wow);
+		jointAccount.removeUser(john);
 		System.out.println(jointAccount.getUsers());
 
 		System.out.println("--- TRANSACTIONS ---");
