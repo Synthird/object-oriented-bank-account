@@ -18,24 +18,24 @@ import userservice.User;
 
 public class TestZone {
 	public static void main(String[] args) throws NegativeBalanceException {
-		User user = new User("User", 15, 25);
+		User charlie = new User("Charlie", 15, 25);
 		User john = new User("John", 15, 21);
 
-		SingleAccount singleAccount = new SingleAccount(45, user, "Single", "USD", 152, 23, 12);
-		JointAccount jointAccount = new JointAccount(user, "Joint", "USD", 02, 01, 20);
+		SingleAccount singleAccount = new SingleAccount(45, charlie, "Single", "USD", 152, 23, 12);
+		JointAccount jointAccount = new JointAccount(charlie, "Joint", "USD", 02, 01, 20);
 
 		System.out.println("--- Swapping single account owners ---");
 
-		System.out.println("User accounts: " + user.getBankAccounts());
-		System.out.println("john accounts: " + john.getBankAccounts());
+		System.out.println("Charlie's accounts: " + charlie.getBankAccounts());
+		System.out.println("John's accounts: " + john.getBankAccounts());
 
 		singleAccount.setUserHolder(john);
 
 		System.out.println("\nSwapped holder to john:\n");
 		System.out.println("User holder: " + singleAccount.getUserHolder());
 
-		System.out.println("User accounts: " + user.getBankAccounts());
-		System.out.println("john accounts: " + john.getBankAccounts());
+		System.out.println("Charlie's accounts: " + charlie.getBankAccounts());
+		System.out.println("John's accounts: " + john.getBankAccounts());
 
 		System.out.println("--- Adding and removing joint account users ---");
 
@@ -47,7 +47,7 @@ public class TestZone {
 		jointAccount.addUser(john);
 		System.out.println(jointAccount.getUsers());
 
-		jointAccount.removeUser(user);
+		jointAccount.removeUser(charlie);
 		System.out.println(jointAccount.getUsers());
 
 		jointAccount.removeUser(john);
@@ -78,7 +78,7 @@ The library is contained in a jar file in the [releases page](https://github.com
 
 Download the jar file and place it into the ```lib``` folder, which is located at the root of the project.
 
-![Jar file in the root folder of a non-build tools Java project](https://github.com/user-attachments/assets/1984ea04-bfa1-4796-99f2-e556834e81ec)
+![Jar file in the root folder of a non-build tools Java project](https://github.com/charlie-attachments/assets/1984ea04-bfa1-4796-99f2-e556834e81ec)
 
 If there is not a ```lib``` folder at the root folder, create it.
 
