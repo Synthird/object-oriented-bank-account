@@ -9,7 +9,7 @@ import makingtransactions.bankaccounts.JointAccount;
  * A class for creating a user.
  * 
  * @author Synthird
- * @version 1.0.2
+ * @version 1.0.3
  */
 public final class User {
 	private String name;
@@ -167,7 +167,7 @@ public final class User {
 	}
 
 	/**
-	 * Add an email to the <code>ArrayList</code> of email addresses
+	 * Add an email to the <code>ArrayList</code> of email addresses.
 	 * 
 	 * @param email The email to be added.
 	 */
