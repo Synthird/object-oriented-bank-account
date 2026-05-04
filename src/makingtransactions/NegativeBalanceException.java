@@ -11,7 +11,7 @@ public class NegativeBalanceException extends Exception {
 	private double credit, balance;
 
 	/**
-	 * Throw the NegativeBalanceException, to avoid a negative balance on a bank
+	 * Throw the NegativeBalanceException to avoid a negative balance on a bank
 	 * account.
 	 * 
 	 * @param credit  The credit of the transaction.
